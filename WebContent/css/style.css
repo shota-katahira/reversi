@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* ゲーム画面の背景 */
+body {
+  background-color: #3b3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 盤面 */
+.board {
+  background-color: #4c4c4c;
+  border: 2px solid #dcdcdc;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+/* 盤面のマス目 */
+.cell {
+  background-color: #4c4c4c;
+  border: 2px solid #dcdcdc;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+}
+
+/* 石 */
+.piece {
+  border-radius: 50%;
+  height: 32px;
+  margin: auto;
+  width: 32px;
+}
+
+/* 黒石 */
+.black {
+  background-color: #000000;
+}
+
+/* 白石 */
+.white {
+  background-color: #ffffff;
+}
+
+/* 現在の手番 */
+.turn {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* リセットボタン */
+.reset-button {
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+}
